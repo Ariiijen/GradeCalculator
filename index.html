@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Grade Calculator</h1>
+        <div class="input-section">
+            <div class="form-group">
+                <input type="text" id="studentName" placeholder="Enter student name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="studentScores" placeholder="Enter scores (space-separated)">
+            </div>
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="records-section">
+            <h2>Student Records</h2>
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="recordsBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
